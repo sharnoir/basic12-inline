@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{margin: 0; padding: 0;}
+     .전체{background-color:greenyellow;
+    width: 800px; margin: auto;
+    }
+    .블럭요소{background-color: coral;}
+    .블럭요소2{background-color: darkcyan;}
+    .블럭요소2 .인라인요소{background-color: darkmagenta;
+    width: 500px;
+    }
+    .블럭요소2 .인라인요소2{background-color:blanchedalmond;
+    display: block; text-align: center;
+    }
+    .블럭요소2 .인라인요소3{background-color:fuchsia;
+        text-align: center;
+    }
+    .블럭요소2 .인라인요소3:before{content:"b";}
+    .블럭요소2 .인라인요소3:after{content:"a"; display: block;}
+    </style>
+</head>
+<body>
+    <div class="전체">
+        <div class="블럭요소">블럭요소(부모-.전체의 넓이를 모두 채움)</div>
+        <div class="블럭요소2">
+            <span class="인라인요소">인라인요소(공간의 개념이 없음)</span>
+            <span class="인라인요소2">인라인요소2</span>
+            <span class="인라인요소3">인라인요소3</span>
+        </div>
+    </div>
+</body>
+</html>
